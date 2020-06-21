@@ -1,0 +1,9 @@
+rootProject.name='P.D application'
+include ':app'
+
+setBinding(new Binding([gradle:this]))
+
+evaluate(new File(
+        settingsDir.parentFile,
+        'doctoroid/.android/include_flutter.groovy'
+))
